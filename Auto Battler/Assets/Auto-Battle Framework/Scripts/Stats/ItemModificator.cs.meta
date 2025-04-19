@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5e25c62ed94799c42af7ee0a53f7830b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232883
+  packageName: Auto-Battle Framework
+  packageVersion: 1.3.1
+  assetPath: Assets/Auto-Battle Framework/Scripts/Stats/ItemModificator.cs
+  uploadId: 704521

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6822192493dac3045bd8cf45788ea814
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232883
+  packageName: Auto-Battle Framework
+  packageVersion: 1.3.1
+  assetPath: Assets/Auto-Battle Framework/Prefabs/Characters/Monk/EnemyVersion/EnemyMonk.prefab
+  uploadId: 704521

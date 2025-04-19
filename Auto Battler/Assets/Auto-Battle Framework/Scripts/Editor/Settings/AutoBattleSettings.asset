@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 036d4e7143da2d94399ed8dab1958cf1, type: 3}
+  m_Name: AutoBattleSettings
+  m_EditorClassIdentifier: 
+  defaultHealthBar: {fileID: 5066534884551985945, guid: 8ecbf766049002d499f002cee4239436, type: 3}
+  defaultCharacterShopItemUI: {fileID: 8020878535964746963, guid: 044798776930d3342bef2633c9c18f0f, type: 3}
+  defaultAnimatorController: {fileID: 9100000, guid: 89586bab2c0f47b458a211500869bd92, type: 2}
+  defaultHexTexture: {fileID: 2800000, guid: aeb2f7782d4de56498d304df803051fb, type: 3}
+  defaultSquaredTexture: {fileID: 2800000, guid: ca6d8068c2326ff4fa19cfdb5dd33c8c, type: 3}
+  defaultStageEmptyUIPrefab: {fileID: 7836116425479842810, guid: 9e87a4cf507944e4e9f8ba2536b85507, type: 3}
+  BattlePositionEditorSize: 65
+  NumberToFusion: 3

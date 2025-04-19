@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee7b6c2154feae4fa0517b5f95c02cb, type: 3}
+  m_Name: Level 1-2-3
+  m_EditorClassIdentifier: 
+  GroupItemList:
+  - probability: 60
+    cost: 1
+    shopItems:
+    - scriptableShopItem: {fileID: 11400000, guid: 20db63f06bd35ec42861f45e5482a806, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: cfc550406858de945a09ae451a67ca76, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: 73a24a39019e44948aac81fb0a314b95, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+  - probability: 40
+    cost: 2
+    shopItems:
+    - scriptableShopItem: {fileID: 11400000, guid: 7f2961f727368154ba83c48c3cda7bfa, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: eb5f261285ff40c44a2cd10ba6db6c25, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: 1220cdea883d4804781088dc329a6b58, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: 20db63f06bd35ec42861f45e5482a806, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0

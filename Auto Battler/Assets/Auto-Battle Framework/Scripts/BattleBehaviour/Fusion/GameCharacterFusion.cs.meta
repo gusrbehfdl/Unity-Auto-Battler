@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c19422d86fa72cd4b9c0085e0e96d47e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232883
+  packageName: Auto-Battle Framework
+  packageVersion: 1.3.1
+  assetPath: Assets/Auto-Battle Framework/Scripts/BattleBehaviour/Fusion/GameCharacterFusion.cs
+  uploadId: 704521

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ebfb93b6bd9974b941df933b6d8bbd, type: 3}
+  m_Name: 3-Boss
+  m_EditorClassIdentifier: 
+  GridCellTexture: {fileID: 2800000, guid: aeb2f7782d4de56498d304df803051fb, type: 3}
+  battlePositions: 0000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000003000000000000000200000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000003000000000000000200000002000000000000000000000000000000000000000000000003000000000000000400000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001000000
+  characterGroups:
+  - characterGroup:
+    - {fileID: 11400000, guid: 9192e158828a5d9418340e9a9a81b755, type: 2}
+  - characterGroup:
+    - {fileID: 11400000, guid: b7b85811607511040822e2a8c3198ef6, type: 2}
+    - {fileID: 11400000, guid: 0bb7c6eb408e77b4dbb9d2dc2d3a7540, type: 2}
+    - {fileID: 11400000, guid: 66f0665a7714f3846aadb8b3a4abe177, type: 2}
+  - characterGroup:
+    - {fileID: 11400000, guid: 0c973a6581738714ba3adf3c4d2035ef, type: 2}
+  - characterGroup:
+    - {fileID: 11400000, guid: 73698f0fd556f0342ab07d66e1ce2006, type: 2}
+  selected: 30
+  s:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0

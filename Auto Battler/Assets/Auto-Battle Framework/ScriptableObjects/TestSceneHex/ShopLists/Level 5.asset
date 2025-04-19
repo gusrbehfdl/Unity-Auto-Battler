@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee7b6c2154feae4fa0517b5f95c02cb, type: 3}
+  m_Name: Level 5
+  m_EditorClassIdentifier: 
+  GroupItemList:
+  - probability: 30
+    cost: 1
+    shopItems:
+    - scriptableShopItem: {fileID: 11400000, guid: cfc550406858de945a09ae451a67ca76, type: 2}
+      itemCost: 1
+      itemProbabilityWeight: 30
+    - scriptableShopItem: {fileID: 11400000, guid: c4caf32ddba392e45b0433f2cee0888a, type: 2}
+      itemCost: 1
+      itemProbabilityWeight: 30
+    - scriptableShopItem: {fileID: 11400000, guid: 73a24a39019e44948aac81fb0a314b95, type: 2}
+      itemCost: 1
+      itemProbabilityWeight: 30
+  - probability: 40
+    cost: 2
+    shopItems:
+    - scriptableShopItem: {fileID: 11400000, guid: 7f2961f727368154ba83c48c3cda7bfa, type: 2}
+      itemCost: 2
+      itemProbabilityWeight: 40
+    - scriptableShopItem: {fileID: 11400000, guid: 1220cdea883d4804781088dc329a6b58, type: 2}
+      itemCost: 2
+      itemProbabilityWeight: 40
+    - scriptableShopItem: {fileID: 11400000, guid: eb5f261285ff40c44a2cd10ba6db6c25, type: 2}
+      itemCost: 2
+      itemProbabilityWeight: 40
+  - probability: 20
+    cost: 3
+    shopItems:
+    - scriptableShopItem: {fileID: 11400000, guid: 359e01ca813d33443a1b9f3cc3884140, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 20
+    - scriptableShopItem: {fileID: 11400000, guid: 431e1201581eeb24f9d091386009f6d4, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 20
+    - scriptableShopItem: {fileID: 11400000, guid: 53f60493291f03e45800e23286f81347, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 20
+    - scriptableShopItem: {fileID: 11400000, guid: ab1967b56f3160b4f88118bd92c27de5, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 20
+  - probability: 10
+    cost: 4
+    shopItems:
+    - scriptableShopItem: {fileID: 11400000, guid: d97f39c7d263f724187ec011af55995b, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 30
+    - scriptableShopItem: {fileID: 11400000, guid: a382ee07560f04d459252bda66f6ba94, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 30
+    - scriptableShopItem: {fileID: 11400000, guid: d8da37fd2dc03414b90c2bbc69f21e3b, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 30
+    - scriptableShopItem: {fileID: 11400000, guid: 667b9194bb5a9614987ca006633d5a0c, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 30
+    - scriptableShopItem: {fileID: 11400000, guid: 114edbf7b4a99194fa78183f959e0f44, type: 2}
+      itemCost: 3
+      itemProbabilityWeight: 30

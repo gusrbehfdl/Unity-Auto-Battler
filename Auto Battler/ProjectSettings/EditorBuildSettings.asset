@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Auto-Battle Framework/Scenes/MainMenuScene.unity
+    guid: ccf9c9ddbf3eeff4b916290779238098
+  - enabled: 1
+    path: Assets/Auto-Battle Framework/Scenes/SampleGame.unity
+    guid: eaf73d3eb0e648c44a07637b37512ae8
+  - enabled: 1
+    path: Assets/Auto-Battle Framework/Scenes/Battle14x10.unity
+    guid: 79685164a9d8c64469fed509470d77f0
+  - enabled: 0
+    path: Assets/Auto-Battle Framework Multiplayer/Scenes/Multiplayer.unity
+    guid: 76ee9da0858360947b1e3941638254a2
+  - enabled: 0
+    path: Assets/Auto-Battle Framework Multiplayer/Scenes/Multiplayer4Players.unity
+    guid: f350f8fc78e50af40a0003e5dfa74904
+  m_configObjects: {}

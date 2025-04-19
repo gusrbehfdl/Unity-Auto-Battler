@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab5bf37a7e0db8439a157eee15d9c60, type: 3}
+  m_Name: ApplyFixedDamageOverTimeOnHitBuff
+  m_EditorClassIdentifier: 
+  EffectImage: {fileID: 0}
+  DamageType: 0
+  spawnEffect: {fileID: 0}
+  modificator:
+    statsModificator: []
+    attackEffects: []
+    onHitEffects:
+    - {fileID: 11400000, guid: 4a56f01748149dd47a933b098913ad2a, type: 2}
+    sprite: {fileID: 0}
+  duration: 5
+  maxStacks: 1
+  RestartTimeWhenRepeated: 1
+  stacks: 0

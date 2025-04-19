@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9654fbb2df7d9ca42bd11d3b1c076389
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232883
+  packageName: Auto-Battle Framework
+  packageVersion: 1.3.1
+  assetPath: Assets/Auto-Battle Framework/Prefabs/Characters/Cleric/Level2/Cleric
+    Lv2.prefab
+  uploadId: 704521

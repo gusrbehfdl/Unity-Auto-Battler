@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fd4e0599bf96dcb4a9a655eb2442420f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232883
+  packageName: Auto-Battle Framework
+  packageVersion: 1.3.1
+  assetPath: Assets/Auto-Battle Framework/Prefabs/Characters/Warrior/Warrior.prefab
+  uploadId: 704521

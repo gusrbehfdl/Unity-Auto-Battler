@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab5bf37a7e0db8439a157eee15d9c60, type: 3}
+  m_Name: ApplyVariableDamageOverTimeOnHitBuff
+  m_EditorClassIdentifier: 
+  EffectImage: {fileID: 21300000, guid: ce9f17099511d9443bb25aaf83397bb2, type: 3}
+  EffectDescription: For three seconds, the Rogue's attacks poison the target, inflicting
+    10% of its current health as damage. Lasts 5 seconds, 3 stacks max..
+  DoubleAnimation: 0
+  DamageType: 0
+  modificator:
+    statsModificator: []
+    attackEffects: []
+    onHitEffects:
+    - {fileID: 11400000, guid: 776a752fa3f1a814ca7df24bae912511, type: 2}
+    sprite: {fileID: 0}
+  duration: 3
+  maxStacks: 1
+  RestartTimeWhenRepeated: 1
+  stacks: 0

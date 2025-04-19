@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73d876207f002b44b6a63d8dd776d8b, type: 3}
+  m_Name: ApplySpeedBuffOnHit
+  m_EditorClassIdentifier: 
+  effect: {fileID: 11400000, guid: ddcf17ccdc85a71428eeb3c7296f1b84, type: 2}

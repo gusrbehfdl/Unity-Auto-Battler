@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 842a210770f6833469ba1e2d2e4848ee, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  TraitName: Wizard
+  TraitImage: {fileID: 21300000, guid: 4a3c0bc4a84deca468e7b64ab76d312c, type: 3}
+  TraitDescription: "Increases the team\xB4s magic damage."
+  TraitOptions:
+  - NumberOfTraits: 1
+    modificator:
+      statsModificator:
+      - stat: 2
+        modificatorType: 0
+        value: 20
+      attackEffects: []
+      onHitEffects: []
+      sprite: {fileID: 0}
+    OptionDescription: Magic damage is increased by 20.
+    TraitOptionColor: {r: 1, g: 0.65882355, b: 0.34509805, a: 1}
+    Target: 0
+    SelectedTraits: []
+  - NumberOfTraits: 2
+    modificator:
+      statsModificator:
+      - stat: 2
+        modificatorType: 0
+        value: 50
+      attackEffects: []
+      onHitEffects: []
+      sprite: {fileID: 0}
+    OptionDescription: Magic damage is increased by 50.
+    TraitOptionColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    Target: 0
+    SelectedTraits: []
+  ActivatedOption:
+    NumberOfTraits: 1
+    modificator:
+      statsModificator:
+      - stat: 2
+        modificatorType: 0
+        value: 20
+      attackEffects: []
+      onHitEffects: []
+      sprite: {fileID: 0}
+    OptionDescription: Magic damage is increased by 20.
+    TraitOptionColor: {r: 1, g: 0.65882355, b: 0.34509805, a: 1}
+    Target: 0
+    SelectedTraits: []
+  PreviousOption:
+    NumberOfTraits: 1
+    modificator:
+      statsModificator:
+      - stat: 2
+        modificatorType: 0
+        value: 20
+      attackEffects: []
+      onHitEffects: []
+      sprite: {fileID: 0}
+    OptionDescription: Magic damage is increased by 20.
+    TraitOptionColor: {r: 1, g: 0.65882355, b: 0.34509805, a: 1}
+    Target: 0
+    SelectedTraits: []
+  TraitNumber: 1
