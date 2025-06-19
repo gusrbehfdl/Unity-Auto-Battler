@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4dc385f098c7f08469d4d4eb0e0d8e02
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 305379
+  packageName: P09_Modular_Humanoid
+  packageVersion: 2025.5.01
+  assetPath: Assets/P09_Modular_Humanoid/Scenes/DemoScene_Data/Animation/Other/magica_Idle_to_Idle_Combat
+    1.anim
+  uploadId: 753340
