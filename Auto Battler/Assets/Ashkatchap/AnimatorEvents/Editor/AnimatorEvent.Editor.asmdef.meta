@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 93511e8a6b2a92846a7f87a3cebbaafd
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169047
+  packageName: Animator Events
+  packageVersion: 2.5.11p1
+  assetPath: Assets/Ashkatchap/AnimatorEvents/Editor/AnimatorEvent.Editor.asmdef
+  uploadId: 604218

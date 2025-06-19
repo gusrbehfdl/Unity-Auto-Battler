@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 87aae57f36b9ae24cab29241bfa8fe95
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169047
+  packageName: Animator Events
+  packageVersion: 2.5.11p1
+  assetPath: Assets/Ashkatchap/AnimatorEvents/Editor/Tests (can be removed)/Test
+    (Do nothing for 1 second, no loop).anim
+  uploadId: 604218

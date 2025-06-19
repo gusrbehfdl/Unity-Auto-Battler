@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 14b127f31cc21654cae89394a20ef149
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169047
+  packageName: Animator Events
+  packageVersion: 2.5.11p1
+  assetPath: Assets/Ashkatchap/AnimatorEvents/Editor/Scripts/AnimatorEventsEditorSettings.cs
+  uploadId: 604218

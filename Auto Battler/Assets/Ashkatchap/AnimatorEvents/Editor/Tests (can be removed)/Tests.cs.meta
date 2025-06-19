@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a81acd3c48c26224da9e80d96986f755
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - controller: {fileID: 9100000, guid: 0aca9454a8e57f143b73b8109d7a64ff, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169047
+  packageName: Animator Events
+  packageVersion: 2.5.11p1
+  assetPath: Assets/Ashkatchap/AnimatorEvents/Editor/Tests (can be removed)/Tests.cs
+  uploadId: 604218

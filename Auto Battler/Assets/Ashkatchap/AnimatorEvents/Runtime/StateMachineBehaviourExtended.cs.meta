@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: be8cd44eef042c94699a47fc9274ffe2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 169047
+  packageName: Animator Events
+  packageVersion: 2.5.11p1
+  assetPath: Assets/Ashkatchap/AnimatorEvents/Runtime/StateMachineBehaviourExtended.cs
+  uploadId: 604218
