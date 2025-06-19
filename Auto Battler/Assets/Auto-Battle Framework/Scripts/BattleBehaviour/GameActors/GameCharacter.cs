@@ -630,7 +630,9 @@ namespace AutoBattleFramework.BattleBehaviour.GameActors
         /// </summary>
         public virtual void Attack()
         {
-
+            if (!TargetEnemy) {
+                return;
+            }
             attackEffect.Attack(this, ProjectileShootingPoint);
 
             //Triggers all on attack effects of all modificators and buffs attached (Only trigers OnAttackEffects, On hit effects are triggered when the character makes some damage)

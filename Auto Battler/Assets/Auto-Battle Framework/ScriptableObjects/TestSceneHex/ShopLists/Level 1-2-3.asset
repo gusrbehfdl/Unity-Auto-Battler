@@ -25,6 +25,9 @@ MonoBehaviour:
     - scriptableShopItem: {fileID: 11400000, guid: 73a24a39019e44948aac81fb0a314b95, type: 2}
       itemCost: 0
       itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
   - probability: 40
     cost: 2
     shopItems:
@@ -38,5 +41,8 @@ MonoBehaviour:
       itemCost: 0
       itemProbabilityWeight: 0
     - scriptableShopItem: {fileID: 11400000, guid: 20db63f06bd35ec42861f45e5482a806, type: 2}
+      itemCost: 0
+      itemProbabilityWeight: 0
+    - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
       itemCost: 0
       itemProbabilityWeight: 0
