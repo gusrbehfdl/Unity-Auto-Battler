@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 71a5ea92601a4dd4a984a6352e17875b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207527
+  packageName: IK Avatar Poser
+  packageVersion: 1.1
+  assetPath: Assets/TurnTheGameOn/IKAvatarPoser/AnimatorControllers/AvatarPoserIdle.controller
+  uploadId: 477899

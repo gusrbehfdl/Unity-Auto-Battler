@@ -32,7 +32,7 @@ namespace AutoBattleFramework.BattleBehaviour
             {
                 state.stage = this;
             }
-            ui = FindObjectOfType<StageUI>();
+            ui = FindFirstObjectByType<StageUI>();
             ui.InitializeUI();
         }
 

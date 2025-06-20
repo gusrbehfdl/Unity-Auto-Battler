@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66bccefbb3b44e64f9af14304513ce0a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207527
+  packageName: IK Avatar Poser
+  packageVersion: 1.1
+  assetPath: Assets/TurnTheGameOn/IKAvatarPoser/AnimatorControllers/AvatarPoserNoAnim.controller
+  uploadId: 477899

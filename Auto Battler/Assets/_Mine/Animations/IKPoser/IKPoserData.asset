@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a3ba1619a65404fa139287e9d54999, type: 3}
+  m_Name: IKPoserData
+  m_EditorClassIdentifier: 
+  profiles:
+  - name: Default
+    leftLegControl: 1
+    rightLegControl: 1
+    leftArmControl: 1
+    rightArmControl: 1
+    headControl: 0
+    leftFootPosition: {x: -0.0881497, y: 0.09502865, z: -0.017836481}
+    leftFootRotation: {x: -0, y: -0, z: -0, w: 1}
+    rightFootPosition: {x: 0.08815019, y: 0.09502865, z: -0.01783821}
+    rightFootRotation: {x: -0, y: -0, z: -0, w: 1}
+    leftHandPosition: {x: -0.32354832, y: 0.8571355, z: -0.029312491}
+    leftHandRotation: {x: -0, y: -0, z: -0, w: 1}
+    rightHandPosition: {x: 0.3235483, y: 0.85713553, z: -0.029312253}
+    rightHandRotation: {x: -0, y: -0, z: -0, w: 1}
+    headPosition: {x: 0.0000000027648055, y: 1.4168843, z: 0.18346176}
+    headRotation: {x: -0, y: -0, z: -0, w: 1}
+    leftElbowPosition: {x: -0.30894923, y: 1.2417507, z: -0.029312491}
+    rightElbowPosition: {x: 0.3089492, y: 1.241751, z: -0.029312374}
+    leftKneePosition: {x: -0.08814972, y: 0.5065913, z: 0.18216355}
+    rightKneePosition: {x: 0.08815023, y: 0.5065913, z: 0.18216176}
+    leftFootPositionWeight: 1
+    leftFootRotationWeight: 1
+    rightFootPositionWeight: 1
+    rightFootRotationWeight: 1
+    leftHandPositionWeight: 1
+    leftHandRotationWeight: 1
+    rightHandPositionWeight: 1
+    rightHandRotationWeight: 1
+    headPositionWeight: 1
+    leftKneePositioWeight: 1
+    rightKneePositioWeight: 1
+    leftElbowPositioWeight: 1
+    rightElbowPositioWeight: 1

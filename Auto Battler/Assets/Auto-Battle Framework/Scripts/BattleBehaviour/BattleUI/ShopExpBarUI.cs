@@ -27,7 +27,7 @@ namespace AutoBattleFramework.BattleUI
         // Start is called before the first frame update
         void Start()
         {
-            shopSystem = FindObjectOfType<ShopManager>();
+            shopSystem = FindFirstObjectByType<ShopManager>();
         }
 
         // Update is called once per frame

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 2cb4a4d5ed7de4641a6823b0b6158560
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - defaultAnuimatorController: {fileID: 9100000, guid: 71a5ea92601a4dd4a984a6352e17875b,
+      type: 2}
+  - animator: {instanceID: 0}
+  - leftFootCP: {instanceID: 0}
+  - rightFootCP: {instanceID: 0}
+  - leftHandCP: {instanceID: 0}
+  - rightHandCP: {instanceID: 0}
+  - headCP: {instanceID: 0}
+  - leftElbowCP: {instanceID: 0}
+  - rightElbowCP: {instanceID: 0}
+  - leftKneeCP: {instanceID: 0}
+  - rightKneeCP: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207527
+  packageName: IK Avatar Poser
+  packageVersion: 1.1
+  assetPath: Assets/TurnTheGameOn/IKAvatarPoser/Scripts/IKAvatarPoser.cs
+  uploadId: 477899

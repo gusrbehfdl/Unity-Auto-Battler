@@ -55,7 +55,7 @@ namespace AutoBattleFramework.BattleBehaviour
 
             if (!battle)
             {
-                battle = FindObjectOfType<Battle>();
+                battle = FindFirstObjectByType<Battle>();
             }
 
             if (battle.grid.GridShape == BattleGrid.GridType.Hex)

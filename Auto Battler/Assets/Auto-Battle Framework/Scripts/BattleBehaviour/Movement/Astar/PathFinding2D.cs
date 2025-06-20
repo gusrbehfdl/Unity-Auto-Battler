@@ -3,13 +3,11 @@ using AutoBattleFramework.BattleBehaviour.GameActors;
 using AutoBattleFramework.Battlefield;
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace AutoBattleFramework.Movement
-{
+namespace AutoBattleFramework.Movement {
     /// <summary>
     /// A* algorithm, used by <see cref="BattleBehaviour.GameActors.GameCharacter"/> to move through the <see cref="Battlefield.BattleGrid"/>.
     /// This script is a modification of UnityPathFinding2D, under MIT license. The original script can be found at: https://github.com/folospace/UnityPathFinding2D
@@ -38,7 +36,7 @@ namespace AutoBattleFramework.Movement
 
             //If using from the inspector, find the Battle object
             if(!battle)
-                battle = GameObject.FindObjectOfType<Battle>();
+                battle = GameObject.FindFirstObjectByType<Battle>();
 
             return astar(from, to, battle.grid, getDistance, getNeighbors, battle, GetPathWithoutObstacles);
         }

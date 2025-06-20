@@ -10,14 +10,12 @@ using System.Linq;
 using Unity.Netcode;
 using UnityEngine;
 
-namespace AutoBattleFramework.Multiplayer.BattleBehaviour.Player
-{
+namespace AutoBattleFramework.Multiplayer.BattleBehaviour.Player {
     /// <summary>
     /// Base player that stores all the information necessary to identify objects and areas belonging to the player. It also allows sending and receiving messages from the host.
     /// It will be used in a package featuring multiplayer to be released in version 1.2.
     /// </summary>
-    public abstract class IPlayer : NetworkBehaviour
-    {
+    public abstract class IPlayer : NetworkBehaviour {
         /// <summary>
         /// P^ayer Character bench.
         /// </summary>
@@ -54,9 +52,8 @@ namespace AutoBattleFramework.Multiplayer.BattleBehaviour.Player
         /// </summary>
         /// <param name="ID">ID of the player.</param>
         /// <returns>Player instance with the given ID.</returns>
-        public static IPlayer GetPlayerById(ulong ID)
-        {
-            return FindObjectsOfType<IPlayer>().Where(x => x.OwnerClientId == ID).FirstOrDefault();
+        public static IPlayer GetPlayerById(ulong ID) {
+            return FindObjectsByType<IPlayer>(FindObjectsSortMode.None).Where(x => x.OwnerClientId == ID).FirstOrDefault();
         }
 
         /// <summary>

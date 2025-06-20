@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 89a3ba1619a65404fa139287e9d54999
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207527
+  packageName: IK Avatar Poser
+  packageVersion: 1.1
+  assetPath: Assets/TurnTheGameOn/IKAvatarPoser/Scripts/ProfileData.cs
+  uploadId: 477899

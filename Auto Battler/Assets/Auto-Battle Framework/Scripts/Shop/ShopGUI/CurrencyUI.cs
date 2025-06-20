@@ -23,7 +23,7 @@ namespace AutoBattleFramework.Shop.ShopGUI
         // Start is called before the first frame update
         void Start()
         {
-            shop = FindObjectOfType<ShopManager>();
+            shop = FindFirstObjectByType<ShopManager>();
             timeText = GetComponentInChildren<TMPro.TextMeshProUGUI>();
         }
 

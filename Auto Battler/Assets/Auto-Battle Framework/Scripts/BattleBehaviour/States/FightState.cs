@@ -377,7 +377,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// </summary>
         void RemoveAllProjectiles()
         {
-            foreach(Projectile projectile in FindObjectsOfType<Projectile>())
+            foreach(Projectile projectile in FindObjectsByType<Projectile>(FindObjectsSortMode.None))
             {
                 Destroy(projectile.gameObject);
             }

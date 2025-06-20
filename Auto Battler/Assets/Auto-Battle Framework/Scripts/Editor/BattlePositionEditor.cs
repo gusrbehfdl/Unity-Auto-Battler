@@ -31,7 +31,7 @@ namespace AutoBattleFramework.EditorScripts
             //EditorGUILayout.PropertyField(serializedObject.FindProperty("GridCellTexture"));
             size = AutoBattleSettings.GetOrCreateSettings().BattlePositionEditorSize;
 
-            Battle battle = FindObjectOfType<Battle>();
+            Battle battle = FindFirstObjectByType<Battle>();
             BattleGrid grid = battle.grid;
 
             sbp = target as ScriptableBattlePosition;
