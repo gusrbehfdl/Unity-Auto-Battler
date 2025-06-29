@@ -6,16 +6,16 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ClericAOC
+  m_Name: MonkAOC
   m_Controller: {fileID: 9100000, guid: 89586bab2c0f47b458a211500869bd92, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: -17535816270106927, guid: c5abfe970778cba4a8f419e54b998958, type: 3}
-    m_OverrideClip: {fileID: 7400034, guid: ba77048d138697e4b97d4eeb792c861c, type: 3}
   - m_OriginalClip: {fileID: 3493792999488895456, guid: c5abfe970778cba4a8f419e54b998958, type: 3}
-    m_OverrideClip: {fileID: 7400100, guid: ba77048d138697e4b97d4eeb792c861c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 589a11892e95f834dbf23f9e1cc1f090, type: 3}
   - m_OriginalClip: {fileID: 3669503111932169713, guid: c5abfe970778cba4a8f419e54b998958, type: 3}
-    m_OverrideClip: {fileID: 7400004, guid: ba77048d138697e4b97d4eeb792c861c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 94c75858633b4e04f9e28db3b52b2bba, type: 3}
   - m_OriginalClip: {fileID: -8138059034163915202, guid: c5abfe970778cba4a8f419e54b998958, type: 3}
-    m_OverrideClip: {fileID: 7400106, guid: ba77048d138697e4b97d4eeb792c861c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: a3c7daf5dbba19245938db35245052fa, type: 3}
   - m_OriginalClip: {fileID: 1158634745205866218, guid: c5abfe970778cba4a8f419e54b998958, type: 3}
-    m_OverrideClip: {fileID: 7400032, guid: ba77048d138697e4b97d4eeb792c861c, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 7617ea74d7812ab4ab1ce5cdbd8efe57, type: 3}
+  - m_OriginalClip: {fileID: -17535816270106927, guid: c5abfe970778cba4a8f419e54b998958, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 95dc4fbaa01379f4f908847fb44054d4, type: 3}
