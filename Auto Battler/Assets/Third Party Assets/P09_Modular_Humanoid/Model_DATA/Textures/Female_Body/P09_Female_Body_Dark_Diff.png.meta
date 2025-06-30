@@ -129,6 +129,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 305379
   packageName: P09_Modular_Humanoid
-  packageVersion: 2025.5.01
-  assetPath: Assets/P09_Modular_Humanoid/Model_DATA/Textures/Female_Body/P09_Female_Body_Dark_Diff.png
-  uploadId: 753340
+  packageVersion: 2025.6.25
+  assetPath: Assets/Third Party Assets/P09_Modular_Humanoid/Model_DATA/Textures/Female_Body/P09_Female_Body_Dark_Diff.png
+  uploadId: 767287

@@ -30,9 +30,12 @@ they function correctly even when the character starts playing in the middle of 
 If you want to change the settings, turn off the "Pre-Build" function, 
 make the changes, save the Pre-Build data again, and set it again.
 
-● The texture resolution is set to 2048, but the data is created at 4096, 
-so the resolution can be increased to that value.
-Similarly, weapons are set to 1024, but can be increased to 2048.
+●If you think you have enough capacity for the processing load of Physics by MagicaCloth, 
+you can make simple setting changes such as making the reduction more fine-grained or 
+turning on self-collision to achieve higher quality behavior with fewer errors.
+
+● The texture resolution of each piece of armor is set to 2048, 
+but the data is created at 4096, so the resolution can be increased to that value.
 
 ● The material shader uses "lilToon", but roughness maps and MaskMaps for HDRP are available 
 in "Extra Texture" to support Standard materials.

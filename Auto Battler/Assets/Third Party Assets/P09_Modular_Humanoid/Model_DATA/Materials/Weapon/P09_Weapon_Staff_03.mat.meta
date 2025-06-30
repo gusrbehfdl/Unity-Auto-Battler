@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 874bf59af95394f468e5b0104430799d
+guid: 55f32698d191de14a820d492ab8c8fb9
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
@@ -10,6 +10,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 305379
   packageName: P09_Modular_Humanoid
-  packageVersion: 2025.5.01
-  assetPath: Assets/P09_Modular_Humanoid/Model_DATA/Materials/Weapon/P09_Weapon_Staff_03.mat
-  uploadId: 753340
+  packageVersion: 2025.6.25
+  assetPath: Assets/Third Party Assets/P09_Modular_Humanoid/Model_DATA/Materials/Weapon/P09_Weapon_Staff_03.mat
+  uploadId: 767287

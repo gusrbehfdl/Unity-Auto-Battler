@@ -10,6 +10,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 305379
   packageName: P09_Modular_Humanoid
-  packageVersion: 2025.5.01
-  assetPath: Assets/P09_Modular_Humanoid/Model_DATA/Materials/Weapon/P09_Weapon_Shield_05.mat
-  uploadId: 753340
+  packageVersion: 2025.6.25
+  assetPath: Assets/Third Party Assets/P09_Modular_Humanoid/Model_DATA/Materials/Weapon/P09_Weapon_Shield_05.mat
+  uploadId: 767287

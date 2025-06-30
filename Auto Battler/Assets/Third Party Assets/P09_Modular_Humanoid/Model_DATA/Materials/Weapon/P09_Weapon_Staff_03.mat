@@ -52,11 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 7822cec234ab84845a6c885813b93481, type: 3}
+        m_Texture: {fileID: 2800000, guid: 494a8d8d59043ba43a9275254947d70a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 7822cec234ab84845a6c885813b93481, type: 3}
+        m_Texture: {fileID: 2800000, guid: 494a8d8d59043ba43a9275254947d70a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Bump2ndMap:
@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 1725309168e8fdb41bbcfbc08f1372cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 51aad8d0a07828e4683aba6289b37b9e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -116,7 +116,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 10d5692cd13ed6b449671534e49b9b4f, type: 3}
+        m_Texture: {fileID: 2800000, guid: fd00bba6afb619a4d88598b3ef35a1d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GlitterColorTex:
@@ -168,11 +168,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7822cec234ab84845a6c885813b93481, type: 3}
+        m_Texture: {fileID: 2800000, guid: 494a8d8d59043ba43a9275254947d70a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCap2ndBlendMask:
-        m_Texture: {fileID: 2800000, guid: 8a7990682abd82649ba6587a2e9223c8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCap2ndBumpMap:
@@ -180,11 +180,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCap2ndTex:
-        m_Texture: {fileID: 2800000, guid: 6bbd403658bed3e4880e993b52980f29, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCapBlendMask:
-        m_Texture: {fileID: 2800000, guid: e86251f29ce5c8745be1a6642df13031, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1f673ebb83c83cc4fa1006f154ac709c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCapBumpMap:
@@ -192,11 +192,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCapTex:
-        m_Texture: {fileID: 2800000, guid: 588869b8c4a8b7345abf464f17cb3c7c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6bbd403658bed3e4880e993b52980f29, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: e86251f29ce5c8745be1a6642df13031, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1f673ebb83c83cc4fa1006f154ac709c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -204,7 +204,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
-        m_Texture: {fileID: 2800000, guid: 7822cec234ab84845a6c885813b93481, type: 3}
+        m_Texture: {fileID: 2800000, guid: 494a8d8d59043ba43a9275254947d70a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineVectorTex:
@@ -220,7 +220,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionColorTex:
-        m_Texture: {fileID: 2800000, guid: 92564114ab2e418458191afce7cc6de9, type: 3}
+        m_Texture: {fileID: 2800000, guid: ce9eaa4f263f0204c970ea352d7b4c1a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ReflectionCubeTex:
@@ -228,7 +228,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RimColorTex:
-        m_Texture: {fileID: 2800000, guid: 5c7caeaad9a1c2a429c16d6e3edd1ece, type: 3}
+        m_Texture: {fileID: 2800000, guid: 66007f2fcd5ff62479404d100c4450a2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RimShadeMask:
@@ -261,10 +261,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SmoothnessTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 9c680199d87262840aa02e6be97bb356, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -379,7 +375,7 @@ Material:
     - _EmissionBlendMode: 1
     - _EmissionFluorescence: 0
     - _EmissionGradSpeed: 1
-    - _EmissionMainStrength: 0.3
+    - _EmissionMainStrength: 0.25
     - _EmissionMap_UVMode: 0
     - _EmissionParallaxDepth: 0
     - _EmissionUseGrad: 0
@@ -471,7 +467,7 @@ Material:
     - _MatCap2ndCustomNormal: 0
     - _MatCap2ndEnableLighting: 1
     - _MatCap2ndLod: 0
-    - _MatCap2ndMainStrength: 0.25
+    - _MatCap2ndMainStrength: 0
     - _MatCap2ndNormalStrength: 1
     - _MatCap2ndPerspective: 1
     - _MatCap2ndShadowMask: 0
@@ -485,13 +481,13 @@ Material:
     - _MatCapCustomNormal: 0
     - _MatCapEnableLighting: 1
     - _MatCapLod: 0
-    - _MatCapMainStrength: 0.5
+    - _MatCapMainStrength: 0.2
     - _MatCapNormalStrength: 1
     - _MatCapPerspective: 1
     - _MatCapShadowMask: 0.55
     - _MatCapVRParallaxStrength: 1
     - _MatCapZRotCancel: 1
-    - _Metallic: 0.95
+    - _Metallic: 0
     - _Mode: 0
     - _MonochromeLighting: 0
     - _OcclusionStrength: 1
@@ -590,7 +586,7 @@ Material:
     - _ShadowStrength: 1
     - _ShadowStrengthMaskLOD: 0
     - _ShiftBackfaceUV: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 0.4
     - _SmoothnessTextureChannel: 0
     - _SpecularBlur: 0.5
     - _SpecularBorder: 0.65
@@ -647,7 +643,7 @@ Material:
     - _UseMain2ndTex: 0
     - _UseMain3rdTex: 0
     - _UseMatCap: 1
-    - _UseMatCap2nd: 1
+    - _UseMatCap2nd: 0
     - _UseOutline: 0
     - _UsePOM: 0
     - _UseParallax: 0
@@ -694,7 +690,7 @@ Material:
     - _Emission2ndMap_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionBlendMask_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionBlink: {r: 0, g: 0, b: 3.141593, a: 0}
-    - _EmissionColor: {r: 0.6445581, g: 1.0592737, b: 1.0592737, a: 0.85}
+    - _EmissionColor: {r: 0.17361404, g: 0.94374806, b: 0.94374806, a: 0.85}
     - _EmissionMap_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
     - _GlitterAtras: {r: 1, g: 1, b: 0, a: 0}
     - _GlitterColor: {r: 1, g: 1, b: 1, a: 1}
@@ -721,9 +717,9 @@ Material:
     - _MainTexHSVG: {r: 0, g: 1, b: 1, a: 1}
     - _MainTex_ScrollRotate: {r: 0, g: 0, b: 0, a: 0}
     - _MatCap2ndBlendUV1: {r: 0, g: 0, b: 0, a: 0}
-    - _MatCap2ndColor: {r: 1, g: 1, b: 1, a: 0.9}
+    - _MatCap2ndColor: {r: 1, g: 1, b: 1, a: 1}
     - _MatCapBlendUV1: {r: 0, g: 0, b: 0, a: 0}
-    - _MatCapColor: {r: 1, g: 1, b: 1, a: 0.9}
+    - _MatCapColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
     - _OutlineLitColor: {r: 1, g: 0.19999996, b: 0, a: 0}
     - _OutlineTexHSVG: {r: 0, g: 1, b: 1, a: 1}
@@ -772,4 +768,3 @@ Material:
     - _egc6: {r: 1, g: 1, b: 1, a: 0}
     - _egc7: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
-  m_AllowLocking: 1
