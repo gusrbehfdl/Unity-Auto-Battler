@@ -157,7 +157,7 @@ namespace AutoBattleFramework.Shop.ShopGUI
                     count = Battle.Instance.ItemBenches[(int)IPlayer.instance.OwnerClientId].GetShopItemInBench().Count;
                     benchCount = Battle.Instance.ItemBenches[(int)IPlayer.instance.OwnerClientId].GridCells.Length;
                 }
-                return shop.currency >= cost && count < benchCount;
+                return shop.Currency >= cost && count < benchCount;
             }
             //Single player
             else 
@@ -174,7 +174,7 @@ namespace AutoBattleFramework.Shop.ShopGUI
                     count = Battle.Instance.ItemBenches[0].GetShopItemInBench().Count;
                     benchCount = Battle.Instance.ItemBenches[0].GridCells.Length;
                 }
-                return shop.currency >= cost && count < benchCount;
+                return shop.Currency >= cost && count < benchCount;
             }
         }
 
@@ -186,7 +186,7 @@ namespace AutoBattleFramework.Shop.ShopGUI
             if (CanBeBought() && !disabled)
             {
                 GameActor bought = item.shopItem.Buy(item.shopItem);
-                shop.currency -= cost;
+                shop.Currency -= cost;
 
                 shop.shopLevelManager.GetCurrentList().OnBuy(info);
                 if (shop.RemoveFromListWhenBought)

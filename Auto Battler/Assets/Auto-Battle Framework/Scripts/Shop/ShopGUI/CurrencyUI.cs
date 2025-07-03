@@ -30,7 +30,7 @@ namespace AutoBattleFramework.Shop.ShopGUI
         // Update is called once per frame
         void Update()
         {
-            timeText.SetText(shop.currency.ToString());
+            timeText.SetText(shop.Currency.ToString());
         }
     }
 }

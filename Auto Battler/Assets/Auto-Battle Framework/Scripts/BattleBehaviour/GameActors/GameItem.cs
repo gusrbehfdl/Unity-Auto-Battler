@@ -248,13 +248,13 @@ namespace AutoBattleFramework.BattleBehaviour.GameActors
         }
 
         /// <summary>
-        /// Sell the character and gain <see cref="Shop.ShopManager.currency"/>.
+        /// Sell the character and gain <see cref="Shop.ShopManager.Currency"/>.
         /// </summary>
         public override void Sell()
         {
             if (CanBeSold)
             {
-                Battle.Instance.shopManager.currency += SellFor;
+                Battle.Instance.shopManager.Currency += SellFor;
                 Debug.Log("Sell for " + SellFor);
                 if (Battle.Instance.shopManager.RemoveFromListWhenBought)
                 {

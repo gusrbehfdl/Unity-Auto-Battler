@@ -1,12 +1,9 @@
 using AutoBattleFramework.Stats;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
-using AutoBattleFramework.BattleBehaviour;
+using UnityEngine;
 
-namespace AutoBattleFramework.BattleUI
-{
+namespace AutoBattleFramework.BattleUI {
     /// <summary>
     /// List of active features. It colors the traits according to their level.
     /// </summary>

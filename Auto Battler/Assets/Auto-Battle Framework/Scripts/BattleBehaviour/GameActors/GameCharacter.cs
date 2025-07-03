@@ -405,7 +405,7 @@ namespace AutoBattleFramework.BattleBehaviour.GameActors
         /// Force the movement of a character to a given cell.
         /// </summary>
         /// <param name="cell">Cell where the character will move.</param>
-        protected virtual void MoveCharacterTo(GridCell cell)
+        public virtual void MoveCharacterTo(GridCell cell)
         {
             agent.enabled = true;
             Vector3 pos = cell.transform.position;
@@ -722,13 +722,13 @@ namespace AutoBattleFramework.BattleBehaviour.GameActors
         }
 
         /// <summary>
-        /// the character and gain <see cref="Shop.ShopManager.currency"/>.
+        /// the character and gain <see cref="Shop.ShopManager.Currency"/>.
         /// </summary>
         public override void Sell()
         {
             if (CanBeSold)
             {
-                Battle.Instance.shopManager.currency += SellFor;
+                Battle.Instance.shopManager.Currency += SellFor;
                 Debug.Log("Sell for " + SellFor);
 
                 if (Battle.Instance.shopManager.RemoveFromListWhenBought)

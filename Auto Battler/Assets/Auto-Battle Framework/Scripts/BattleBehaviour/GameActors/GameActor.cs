@@ -15,13 +15,13 @@ namespace AutoBattleFramework.BattleBehaviour.GameActors
     {
         [Header("Game Information")]
         /// <summary>
-        /// Amount of <see cref="Shop.ShopManager.currency"/> for which it can be sold.
+        /// Amount of <see cref="Shop.ShopManager.Currency"/> for which it can be sold.
         /// </summary>
         [Tooltip("If the item can be sold.")]
         public bool CanBeSold = true;
 
         /// <summary>
-        /// Amount of <see cref="Shop.ShopManager.currency"/> for which it can be sold.
+        /// Amount of <see cref="Shop.ShopManager.Currency"/> for which it can be sold.
         /// </summary>
         [Tooltip("Amount of currency for which it can be sold.")]
         public int SellFor;

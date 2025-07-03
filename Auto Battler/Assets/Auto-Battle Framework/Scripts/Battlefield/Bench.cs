@@ -1,11 +1,8 @@
 using AutoBattleFramework.BattleBehaviour.GameActors;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
-namespace AutoBattleFramework.Battlefield
-{
+namespace AutoBattleFramework.Battlefield {
     /// <summary>
     /// The same as a grid, but is used for easy differentiation between the <see cref="BattleGrid"/> and the bench. The Custom Inspector allows to create a bench quickly.
     /// </summary>

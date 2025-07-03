@@ -61,7 +61,7 @@ namespace AutoBattleFramework.BattleBehaviour.Backup
             CharactersBackup = new List<GameCharacter>();
             BattleStateBackup = battleStateBackup;
             BenchesBackup = new Dictionary<Bench, List<GameActor>>();
-            CurrencyBackup = Battle.Instance.shopManager.currency;
+            CurrencyBackup = Battle.Instance.shopManager.Currency;
             SeedBackup = Random.state;
             ShopLevel = Battle.Instance.shopManager.shopLevelManager.CurrentLevel;
             ShopExperience = Battle.Instance.shopManager.shopLevelManager.CurrentExp;

@@ -1,10 +1,7 @@
 using AutoBattleFramework.BattleBehaviour.GameActors;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-namespace AutoBattleFramework.BattleBehaviour
-{
+namespace AutoBattleFramework.BattleBehaviour {
 
     /// <summary>
     /// Information about the characters in a player's field. 

@@ -1,15 +1,11 @@
 using AutoBattleFramework.BattleBehaviour.GameActors;
 using AutoBattleFramework.Shop;
-using AutoBattleFramework.Stats;
 using AutoBattleFramework.Utility;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace AutoBattleFramework.BattleBehaviour.States
-{
+namespace AutoBattleFramework.BattleBehaviour.States {
     /// <summary>
     /// Allows to instantiate enemies, as well as move and equip ally characters.
     /// </summary>
@@ -78,9 +74,9 @@ namespace AutoBattleFramework.BattleBehaviour.States
         public override void OnStageStart()
         {
             Battle battle = Battle.Instance;
-            int interest = (int)(interestRate * battle.shopManager.currency);
-            battle.shopManager.currency += interest;
-            battle.shopManager.currency += goldPerRound;
+            int interest = (int)(interestRate * battle.shopManager.Currency);
+            battle.shopManager.Currency += interest;
+            battle.shopManager.Currency += goldPerRound;
             
             battle.shopManager.shopLevelManager.AddExp(expPerRound);
             

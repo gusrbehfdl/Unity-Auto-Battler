@@ -194,7 +194,7 @@ namespace AutoBattleFramework.BattleBehaviour.Backup
                 Destroy(character.gameObject);
             }
 
-            backup.CurrencyBackup = Battle.Instance.shopManager.currency;
+            backup.CurrencyBackup = Battle.Instance.shopManager.Currency;
             backup.SeedBackup = Random.state;
             backup.BattleStateBackup = state;
             backup.ShopLevel = Battle.Instance.shopManager.shopLevelManager.CurrentLevel;
@@ -260,7 +260,7 @@ namespace AutoBattleFramework.BattleBehaviour.Backup
 
             Battle.Instance.teams[PlayerIndex].team = newCharacters;
 
-            Battle.Instance.shopManager.currency = backup.CurrencyBackup;
+            Battle.Instance.shopManager.Currency = backup.CurrencyBackup;
             Battle.Instance.shopManager.shopLevelManager.CurrentLevel = backup.ShopLevel;
             Battle.Instance.shopManager.shopLevelManager.CurrentExp = backup.ShopExperience;
 

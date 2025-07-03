@@ -9,14 +9,12 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-namespace AutoBattleFramework.BattleBehaviour.States
-{
+namespace AutoBattleFramework.BattleBehaviour.States {
     /// <summary>
     /// It allows teams to play against each other, and obtain a winner based on a victory condition.
     /// </summary>
     [CreateAssetMenu(fileName = "FightState", menuName = "Auto-Battle Framework/BattleStates/FightState", order = 1)]
-    public class FightState : BattleState
-    {
+    public class FightState : BattleState {
         //Team references
         List<GameCharacter> Team1;
         List<GameCharacter> Team2;
@@ -47,8 +45,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Survive: Team 1 wins if the timer reaches zero and there is at least one alive character. <br />
         /// KillAll: Team 1 wins if the timer reaches zero and all characters in Team2 are dead.
         /// </summary> 
-        public enum WinCondition
-        {
+        public enum WinCondition {
             MoreCharactersAlive,
             MoreTotalHP,
             MorePercentualHP,
@@ -60,8 +57,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// The type of lose condition: <br />
         /// Defeated All: Team 1 loses if all members are dead.
         /// </summary>
-        public enum LoseCondition
-        {
+        public enum LoseCondition {
             DefeatedAll,
         }
 
@@ -78,17 +74,14 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// <summary>
         /// Check for win and lose conditions. If one condition is fullfiled, change state.
         /// </summary>
-        public override void Update()
-        {
-            if (!stageFinished)
-            {
+        public override void Update() {
+            if (!stageFinished) {
                 bool WinCondition = CheckWinCondition();
 
                 bool LoseCondition = CheckLoseCondition();
 
                 //If win or lose, 
-                if (WinCondition || LoseCondition)
-                {
+                if (WinCondition || LoseCondition) {
                     Battle.Instance.timer.ResetTimer(0);
                     stageFinished = true;
                 }
@@ -100,10 +93,8 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// </summary>
         /// <param name="actor">Actor to be dragged.</param>
         /// <returns>True if the actor is an Item.</returns>
-        public override bool AllowFieldDrag(GameActor actor)
-        {
-            if(actor is GameItem)
-            {
+        public override bool AllowFieldDrag(GameActor actor) {
+            if (actor is GameItem) {
                 return true;
             }
             return false;
@@ -113,32 +104,24 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Moves the character and allows the attack on an enemy.
         /// </summary>
         /// <param name="character"></param>
-        public override void CharacterAIUpdate(GameCharacter character)
-        {
-            if (movement == null)
-            {
+        public override void CharacterAIUpdate(GameCharacter character) {
+            if (movement == null) {
                 movement = new ApproximateAstarMovement();
             }
 
-            if (character.State == GameCharacter.AIState.Dead)
-            {
+            if (character.State == GameCharacter.AIState.Dead) {
                 character.agent.enabled = false;
                 return;
-            }
-            else
-            {
+            } else {
                 character.agent.enabled = true;
             }
 
-            if (character.State != GameCharacter.AIState.Benched && character.State != GameCharacter.AIState.Dead)
-            {
+            if (character.State != GameCharacter.AIState.Benched && character.State != GameCharacter.AIState.Dead) {
                 character.GetCurrentCell();
                 int currentPathIndex = character.currentPath.IndexOf(character.CurrentGridCell);
-                if (currentPathIndex + 1 < character.currentPath.Count)
-                {
+                if (currentPathIndex + 1 < character.currentPath.Count) {
                     GridCell nextCell = character.currentPath[currentPathIndex + 1];
-                    if (nextCell.shopItem)
-                    {
+                    if (nextCell.shopItem) {
                         character.ForceRepath = true;
                     }
                 }
@@ -150,62 +133,48 @@ namespace AutoBattleFramework.BattleBehaviour.States
 
             List<BuffEffectInfo> toBeRemoved = new List<BuffEffectInfo>();
 
-            foreach (BuffEffectInfo info in character.BuffList)
-            {
+            foreach (BuffEffectInfo info in character.BuffList) {
                 info.buff.UpdateBuff(info);
-                if (info.CanBeRemoved())
-                {
+                if (info.CanBeRemoved()) {
                     toBeRemoved.Add(info);
                 }
             }
 
-            foreach (BuffEffectInfo info in toBeRemoved)
-            {
+            foreach (BuffEffectInfo info in toBeRemoved) {
                 info.buff.RemoveBuff(info);
             }
 
-            if (character.CurrentStats.Health <= 0 && character.State != GameCharacter.AIState.Dead)
-            {
+            if (character.CurrentStats.Health <= 0 && character.State != GameCharacter.AIState.Dead) {
                 movement.Dead(character);
             }
 
-            switch (character.State)
-            {
+            switch (character.State) {
                 case GameCharacter.AIState.NoTarget:
                     movement.CharacterMovement(character);
                     break;
 
                 case GameCharacter.AIState.Moving:
-                    if (character.TargetEnemy.State == GameCharacter.AIState.Moving || character.State == GameCharacter.AIState.Moving || character.State == GameCharacter.AIState.Dead || character.ForceRepath)
-                    {
+                    if (character.TargetEnemy.State == GameCharacter.AIState.Moving || character.State == GameCharacter.AIState.Moving || character.State == GameCharacter.AIState.Dead || character.ForceRepath) {
                         movement.CharacterMovement(character);
                     }
                     break;
 
                 case GameCharacter.AIState.Attacking:
-                    if (character.TargetEnemy.State == GameCharacter.AIState.Moving || character.TargetEnemy.State == GameCharacter.AIState.Dead)
-                    {
+                    if (character.TargetEnemy.State == GameCharacter.AIState.Moving || character.TargetEnemy.State == GameCharacter.AIState.Dead) {
                         movement.CharacterMovement(character);
-                    }
-                    else
-                    {
+                    } else {
                         character.FaceTarget();
-                        if (character.CurrentStats.Energy == character.OriginalStats.Energy && character.SpecialAttackEffect != null)
-                        {
+                        if (character.CurrentStats.Energy == character.OriginalStats.Energy && character.SpecialAttackEffect != null) {
                             character.ChangeState(GameCharacter.AIState.SpecialAttacking);
                         }
                     }
                     break;
                 case GameCharacter.AIState.SpecialAttacking:
-                    if (character.TargetEnemy.State == GameCharacter.AIState.Moving || character.TargetEnemy.State == GameCharacter.AIState.Dead)
-                    {
+                    if (character.TargetEnemy.State == GameCharacter.AIState.Moving || character.TargetEnemy.State == GameCharacter.AIState.Dead) {
                         movement.CharacterMovement(character);
-                    }
-                    else
-                    {
+                    } else {
                         character.FaceTarget();
-                        if (character.CurrentStats.Energy != character.OriginalStats.Energy)
-                        {
+                        if (character.CurrentStats.Energy != character.OriginalStats.Energy) {
                             character.ChangeState(GameCharacter.AIState.Attacking);
                         }
                     }
@@ -214,24 +183,18 @@ namespace AutoBattleFramework.BattleBehaviour.States
 
 
             //If both Characters targets the same cell, the one closest to the cell keeps moving, and the other one stops.
-            if (character.TargetEnemy)
-            {
-                if (character.TargetEnemy.TargetGridCell == character.TargetGridCell && character.TargetGridCell != null)
-                {
-                    if (Vector3.Distance(character.transform.position, character.TargetGridCell.transform.position) > Vector3.Distance(character.TargetEnemy.transform.position, character.TargetGridCell.transform.position))
-                    {
+            if (character.TargetEnemy) {
+                if (character.TargetEnemy.TargetGridCell == character.TargetGridCell && character.TargetGridCell != null) {
+                    if (Vector3.Distance(character.transform.position, character.TargetGridCell.transform.position) > Vector3.Distance(character.TargetEnemy.transform.position, character.TargetGridCell.transform.position)) {
                         movement.CharacterMovement(character);
                     }
                 }
             }
 
             //If a different character is in target cell, set to no Target
-            if (character.State != GameCharacter.AIState.NoTarget && character.State != GameCharacter.AIState.Dead)
-            {
-                if (character.TargetGridCell)
-                {
-                    if (character.TargetGridCell.shopItem && character.TargetGridCell.shopItem != character)
-                    {
+            if (character.State != GameCharacter.AIState.NoTarget && character.State != GameCharacter.AIState.Dead) {
+                if (character.TargetGridCell) {
+                    if (character.TargetGridCell.shopItem && character.TargetGridCell.shopItem != character) {
                         movement.ResolveTie(character);
                         character.ForceRepath = false;
                     }
@@ -243,16 +206,12 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// <summary>
         /// When the battle ends, check for the win or lose condition.
         /// </summary>
-        public override void OnTimerFinish()
-        {
+        public override void OnTimerFinish() {
             bool WinCondition = CheckWinCondition();
 
-            if (WinCondition)
-            {
+            if (WinCondition) {
                 Battle.Instance.StartCoroutine(Win(3f));
-            }
-            else
-            {
+            } else {
                 Battle.Instance.StartCoroutine(Lose(3f));
             }
         }
@@ -262,14 +221,12 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// </summary>
         /// <param name="waitTime">Waiting time until next round.</param>
         /// <returns>Waiting time.</returns>
-        IEnumerator Win(float waitTime)
-        {
+        IEnumerator Win(float waitTime) {
             Debug.Log("You win");
             RemoveElementsAtFinish();
-            Battle.Instance.shopManager.currency += currencyPerWin;
+            Battle.Instance.shopManager.Currency += currencyPerWin;
             yield return new WaitForSeconds(waitTime);
-            if (HideCells)
-            {
+            if (HideCells) {
                 Battle.Instance.grid.ShowCells(true);
             }
             RemoveElementsAtFinish();
@@ -282,8 +239,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// </summary>
         /// <param name="waitTime">Waiting time until the scene is reset.</param>
         /// <returns>Waiting time.</returns>
-        IEnumerator Lose(float waitTime)
-        {
+        IEnumerator Lose(float waitTime) {
             Debug.Log("You lose");
             RemoveElementsAtFinish();
             Battle.Instance.losePanel.gameObject.SetActive(true);
@@ -296,8 +252,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// <summary>
         /// Remove elements such projectiles and buffs from the field when the battle is over.
         /// </summary>
-        private void RemoveElementsAtFinish()
-        {
+        private void RemoveElementsAtFinish() {
             RemoveAllProjectiles();
             RemoveAllBuffs();
         }
@@ -305,8 +260,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// <summary>
         /// Reset Team1 positions and remove Team2
         /// </summary>
-        private void ResetTeams()
-        {
+        private void ResetTeams() {
             ResetTeamPositions(Team1);
             RemoveTeam(Team2);
         }
@@ -315,10 +269,8 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Reset all character and moves them to the initial position.
         /// </summary>
         /// <param name="team">List of team members.</param>
-        void ResetTeamPositions(List<GameCharacter> team)
-        {
-            foreach (GameCharacter ai in team)
-            {
+        void ResetTeamPositions(List<GameCharacter> team) {
+            foreach (GameCharacter ai in team) {
                 ai.GetComponent<NavMeshAgent>().Warp(ai.StartingFightPosition);
                 ai.ChangeState(GameCharacter.AIState.NoTarget);
                 ai.animator.Play("Idle", -1, 0f);
@@ -329,10 +281,8 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Remove the members of a team.
         /// </summary>
         /// <param name="team">List of team members.</param>
-        void RemoveTeam(List<GameCharacter> team)
-        {
-            for (int i = 0; i < team.Count; i++)
-            {
+        void RemoveTeam(List<GameCharacter> team) {
+            for (int i = 0; i < team.Count; i++) {
                 Destroy(team[i].gameObject);
             }
             team.Clear();
@@ -341,10 +291,24 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// <summary>
         /// Saves the starting position of all characters.
         /// </summary>
-        public override void OnStageStart()
-        {
+        public override void OnStageStart() {
             Team1 = Battle.Instance.teams[0].team;
             Team2 = Battle.Instance.teams[1].team;
+
+            //auto deploy if can
+            var battle = Battle.Instance;
+            var benched = battle.TeamBenches[0].GetGameCharacterInBench();
+            if(benched.Count > 0 && DeployRemaining()) {
+                foreach (var c in benched) {
+                    //c.MoveCharacterTo()
+                    //battle.SetBattleOrBenchState(c);
+                    if (!DeployRemaining()) {
+                        break;
+                    }
+                }
+            }
+
+            bool DeployRemaining() => battle.GetMaxCharactersInTeam() - Team1.Count > 0;
 
             SetStartingTeamFightPosition(Team1);
             SetStartingTeamFightPosition(Team2);
@@ -363,22 +327,18 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Calcels any dragging and saves the starting position of each character.
         /// </summary>
         /// <param name="team">Members of a team.</param>
-        void SetStartingTeamFightPosition(List<GameCharacter> team)
-        {
-            foreach (GameCharacter ai in team)
-            {
+        void SetStartingTeamFightPosition(List<GameCharacter> team) {
+            foreach (GameCharacter ai in team) {
                 ai.CancelDrag();
                 ai.StartingFightPosition = ai.transform.position;
             }
         }
-        
+
         /// <summary>
         /// Destroy all projectiles in play.
         /// </summary>
-        void RemoveAllProjectiles()
-        {
-            foreach(Projectile projectile in FindObjectsByType<Projectile>(FindObjectsSortMode.None))
-            {
+        void RemoveAllProjectiles() {
+            foreach (Projectile projectile in FindObjectsByType<Projectile>(FindObjectsSortMode.None)) {
                 Destroy(projectile.gameObject);
             }
         }
@@ -386,14 +346,11 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// <summary>
         /// Remove all buffs from characters in play.
         /// </summary>
-        void RemoveAllBuffs()
-        {
+        void RemoveAllBuffs() {
             List<GameCharacter> all = Battle.Instance.teams[0].team.ToList();
             all.AddRange(Battle.Instance.teams[1].team);
-            foreach (GameCharacter character in all)
-            {
-                foreach (BuffEffectInfo info in character.BuffList.ToList())
-                {
+            foreach (GameCharacter character in all) {
+                foreach (BuffEffectInfo info in character.BuffList.ToList()) {
                     info.buff.RemoveBuff(info);
                 }
                 character.BuffList.Clear();
@@ -404,10 +361,8 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Checks if the win condition has been fullfiled.
         /// </summary>
         /// <returns>True if the player wins.</returns>
-        public bool CheckWinCondition()
-        {
-            switch (winCondition)
-            {
+        public bool CheckWinCondition() {
+            switch (winCondition) {
                 case WinCondition.MoreCharactersAlive:
                     return CheckMoreCharatersAliveWinCondition();
 
@@ -431,14 +386,11 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Check that the first team has more characters alive than the second team.
         /// </summary>
         /// <returns>First team has more alive characters.</returns>
-        bool CheckMoreCharatersAliveWinCondition()
-        {
-            if (CheckKillAllWinCondition())
-            {
+        bool CheckMoreCharatersAliveWinCondition() {
+            if (CheckKillAllWinCondition()) {
                 return true;
             }
-            if (Battle.Instance.timer.timeRemaining <= 0)
-            {
+            if (Battle.Instance.timer.timeRemaining <= 0) {
                 int team1Alive = Team1.Count(x => x.State != GameCharacter.AIState.Dead);
                 int team2Alive = Team2.Count(x => x.State != GameCharacter.AIState.Dead);
 
@@ -451,14 +403,11 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Check that the first team has more total life than the second team.
         /// </summary>
         /// <returns>First team has more total life than the second team.</returns>
-        bool CheckMoreTotalHPWinCondition()
-        {
-            if (CheckKillAllWinCondition())
-            {
+        bool CheckMoreTotalHPWinCondition() {
+            if (CheckKillAllWinCondition()) {
                 return true;
             }
-            if (Battle.Instance.timer.timeRemaining <= 0)
-            {
+            if (Battle.Instance.timer.timeRemaining <= 0) {
                 int team1RemainingHP = Team1.Sum(x => x.CurrentStats.Health);
                 int team2RemainingHP = Team2.Sum(x => x.CurrentStats.Health);
 
@@ -471,14 +420,11 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Check that the first team has more life in percentage than the second team.
         /// </summary>
         /// <returns>First team has more life in percentage than the second team.</returns>
-        bool CheckMorePercentualHPWinCondition()
-        {
-            if (CheckKillAllWinCondition())
-            {
+        bool CheckMorePercentualHPWinCondition() {
+            if (CheckKillAllWinCondition()) {
                 return true;
             }
-            if (Battle.Instance.timer.timeRemaining <= 0)
-            {
+            if (Battle.Instance.timer.timeRemaining <= 0) {
                 int team1RemainingHP = Team1.Sum(x => x.CurrentStats.Health);
                 int team2RemainingHP = Team2.Sum(x => x.CurrentStats.Health);
 
@@ -497,14 +443,11 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Check that at the end of the round, there is at least one character from the first team alive.
         /// </summary>
         /// <returns>There is at least one character from the first team alive</returns>
-        bool CheckSurviveWinCondition()
-        {
-            if (CheckKillAllWinCondition())
-            {
+        bool CheckSurviveWinCondition() {
+            if (CheckKillAllWinCondition()) {
                 return true;
             }
-            if (Battle.Instance.timer.timeRemaining <= 0)
-            {
+            if (Battle.Instance.timer.timeRemaining <= 0) {
                 int team1Alive = Team1.Count(x => x.State != GameCharacter.AIState.Dead);
                 return team1Alive > 0;
             }
@@ -515,8 +458,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Check that there are no characters from the second team alive.
         /// </summary>
         /// <returns>No characters from the second team alive.</returns>
-        bool CheckKillAllWinCondition()
-        {
+        bool CheckKillAllWinCondition() {
             int team2Alive = Team2.Count(x => x.State != GameCharacter.AIState.Dead);
             return team2Alive == 0;
         }
@@ -525,10 +467,8 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Checks if the lose condition has been fullfiled.
         /// </summary>
         /// <returns>True if the player loses.</returns>
-        public bool CheckLoseCondition()
-        {
-            switch (loseCondition)
-            {
+        public bool CheckLoseCondition() {
+            switch (loseCondition) {
                 case LoseCondition.DefeatedAll:
                     return CheckDefeatedAllLoseCondition();
             }
@@ -539,8 +479,7 @@ namespace AutoBattleFramework.BattleBehaviour.States
         /// Check that there are no characters from the first team alive.
         /// </summary>
         /// <returns>No characters from the first team alive.</returns>
-        bool CheckDefeatedAllLoseCondition()
-        {
+        bool CheckDefeatedAllLoseCondition() {
             int team1Alive = Team1.Count(x => x.State != GameCharacter.AIState.Dead);
             return team1Alive == 0;
         }

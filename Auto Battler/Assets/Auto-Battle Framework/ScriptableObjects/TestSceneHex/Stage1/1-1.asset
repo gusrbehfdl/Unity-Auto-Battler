@@ -18,6 +18,6 @@ MonoBehaviour:
   UIPrefab: {fileID: 7836116425479842810, guid: 9e87a4cf507944e4e9f8ba2536b85507, type: 3}
   battlePositions:
   - {fileID: 11400000, guid: 51e49d5e9fb3df847b07f58ed90e0079, type: 2}
-  goldPerRound: 2
+  goldPerRound: 0
   interestRate: 0.1
   expPerRound: 0
