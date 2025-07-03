@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace AutoBattleFramework.Shop.ShopGUI
-{
+namespace AutoBattleFramework.Shop.ShopGUI {
     /// <summary>
     /// Updates the text with the amount of currency the player has.
     /// </summary>
-    public class CurrencyUI : MonoBehaviour
-    {
+    public class CurrencyUI : MonoBehaviour {
         /// <summary>
         /// Currency text
         /// </summary>
@@ -21,16 +17,14 @@ namespace AutoBattleFramework.Shop.ShopGUI
 
 
         // Start is called before the first frame update
-        void Start()
-        {
+        void Start() {
             shop = FindFirstObjectByType<ShopManager>();
             timeText = GetComponentInChildren<TMPro.TextMeshProUGUI>();
         }
 
         // Update is called once per frame
-        void Update()
-        {
-            timeText.SetText(shop.Currency.ToString());
+        void Update() {
+            timeText.SetText($"${shop.Currency}");
         }
     }
 }

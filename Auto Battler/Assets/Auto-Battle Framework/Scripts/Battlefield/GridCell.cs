@@ -17,6 +17,17 @@ namespace AutoBattleFramework.Battlefield {
         /// The <see cref="BattleBehaviour.GameActors.GameCharacter"/> or <see cref="BattleBehaviour.GameActors.GameItem"/> that is occupying the cell.
         /// </summary>
         public GameActor shopItem;
+        //public GameActor ShopItem {
+        //    get { return _shopItem; }
+        //    set {
+        //        _shopItem = value;
+        //        if (value) {
+        //            Debug.LogWarning($"Shop item changed, {value.name}");
+        //        }
+        //    }
+        //}
+
+        //GameActor _shopItem;
 
         /// <summary>
         /// Cell neighbors. If the cell type is hexagonal, it will have up to 6 neighbors, if it is square, it will have up to 4 neighbors.

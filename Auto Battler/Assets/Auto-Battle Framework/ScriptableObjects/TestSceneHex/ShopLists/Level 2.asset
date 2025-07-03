@@ -32,10 +32,7 @@ MonoBehaviour:
     itemCost: 1
     itemProbabilityWeight: 1
   - scriptableShopItem: {fileID: 11400000, guid: 3d583a8359c5e7446abb8974cd29a5bb, type: 2}
-    itemCost: 1
-    itemProbabilityWeight: 1
-  - scriptableShopItem: {fileID: 11400000, guid: 3d583a8359c5e7446abb8974cd29a5bb, type: 2}
-    itemCost: 1
+    itemCost: 2
     itemProbabilityWeight: 1
   - scriptableShopItem: {fileID: 11400000, guid: d823018d2682b55499a83f830a12c2ef, type: 2}
     itemCost: 2

@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4507de0e593fb0c469adbb56d20a8f6c, type: 3}
-  m_Name: SwordEffect
+  m_Script: {fileID: 11500000, guid: b4d75ec5c0bc8cc40817123785f7579d, type: 3}
+  m_Name: FireBallEffect Default
   m_EditorClassIdentifier: 
+  spawnEffect: {fileID: 0}
   EffectImage: {fileID: 0}
-  EffectDescription: 
   DoubleAnimation: 0
-  DamageType: 0
-  OnHitEffects: []
+  DamageType: 1
+  projectile: {fileID: 2449725199055289054, guid: 50a2dba396525cf4895c75d50ee29e28, type: 3}
+  speed: 6

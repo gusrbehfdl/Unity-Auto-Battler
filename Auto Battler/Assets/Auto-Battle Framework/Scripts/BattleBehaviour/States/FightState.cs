@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.SceneManagement;
 
 namespace AutoBattleFramework.BattleBehaviour.States {
     /// <summary>
@@ -84,6 +83,10 @@ namespace AutoBattleFramework.BattleBehaviour.States {
                 if (WinCondition || LoseCondition) {
                     Battle.Instance.timer.ResetTimer(0);
                     stageFinished = true;
+                    ////
+                    //if (LoseCondition) {
+                    //    Debug.LogWarning($"lose, {Time.frameCount}");
+                    //}
                 }
             }
         }
@@ -298,10 +301,17 @@ namespace AutoBattleFramework.BattleBehaviour.States {
             //auto deploy if can
             var battle = Battle.Instance;
             var benched = battle.TeamBenches[0].GetGameCharacterInBench();
-            if(benched.Count > 0 && DeployRemaining()) {
-                foreach (var c in benched) {
-                    //c.MoveCharacterTo()
-                    //battle.SetBattleOrBenchState(c);
+            if (benched.Count > 0 && DeployRemaining()) {
+                foreach (var character in benched) {
+                    var emptyCell = battle.grid.GridCells.First(x => !x.shopItem && x.CanPlaceCharacter == 0);
+                    if (!emptyCell) {
+                        break;
+                    }
+                    character.CurrentGridCell.shopItem = null;
+                    character.CurrentGridCell = emptyCell;
+                    emptyCell.shopItem = character;
+                    character.MoveCharacterTo(emptyCell);
+                    battle.SetBattleOrBenchState(character);
                     if (!DeployRemaining()) {
                         break;
                     }

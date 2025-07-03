@@ -53,7 +53,7 @@ namespace AutoBattleFramework.Skills
         {
             Projectile proj = Instantiate(projectile) as Projectile;
             Vector3 pos = ai.TargetEnemy.transform.position;
-            pos.y = SpawnFromHeight;
+            pos.y += SpawnFromHeight;
             proj.transform.position = pos;
             proj.transform.LookAt(ai.TargetEnemy.EnemyShootingPoint);
             proj.SetTarget(ai, ai.TargetEnemy, speed, this);

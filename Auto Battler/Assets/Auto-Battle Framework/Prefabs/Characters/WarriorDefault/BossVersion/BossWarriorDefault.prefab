@@ -283,7 +283,6 @@ Transform:
   m_Children:
   - {fileID: 5779793636122871576}
   - {fileID: 1445858193134844298}
-  - {fileID: 4133510653710447718}
   - {fileID: 3324079189034230075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -364,7 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3868021159
+  GlobalObjectIdHash: 2212835602
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -396,11 +395,11 @@ MonoBehaviour:
   traits:
   - {fileID: 11400000, guid: 911b433a1c03fd341b17cb4b557ec366, type: 2}
   - {fileID: 11400000, guid: 6943ccf038e15d140b9471bb214d81e2, type: 2}
-  EnemyShootingPoint: {fileID: 4133510653710447718}
+  EnemyShootingPoint: {fileID: 1630806835469402042}
   OriginalStats:
     Health: 1000
-    Damage: 125
-    MagicDamage: 125
+    Damage: 60
+    MagicDamage: 60
     Defense: 25
     MagicDefense: 25
     AttackSpeed: 1.25
@@ -426,8 +425,8 @@ MonoBehaviour:
   TraitModificators: []
   InitialStats:
     Health: 1000
-    Damage: 125
-    MagicDamage: 125
+    Damage: 60
+    MagicDamage: 60
     Defense: 25
     MagicDefense: 25
     AttackSpeed: 1.25
@@ -440,8 +439,8 @@ MonoBehaviour:
     EnergyRecoveryOnHit: 0.05
   CurrentStats:
     Health: 1000
-    Damage: 125
-    MagicDamage: 125
+    Damage: 60
+    MagicDamage: 60
     Defense: 25
     MagicDefense: 25
     AttackSpeed: 1.25
@@ -591,7 +590,7 @@ Transform:
   m_GameObject: {fileID: 2439899959976619557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.2, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1378,41 +1377,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 60.000004, y: 60.000004, z: 60.000004}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6387311883953521002}
-  m_Father: {fileID: 2025784120327145326}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5385703561208706366
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4133510653710447718}
-  m_Layer: 8
-  m_Name: TargetPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4133510653710447718
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5385703561208706366}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 2025784120327145326}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5578633084073416485

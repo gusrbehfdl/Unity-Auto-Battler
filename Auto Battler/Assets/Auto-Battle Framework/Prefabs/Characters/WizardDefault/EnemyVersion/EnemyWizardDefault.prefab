@@ -982,8 +982,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3243142601239379762}
   m_Father: {fileID: 7618041899199985974}
@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2949223538
+  GlobalObjectIdHash: 726219785
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -1984,8 +1984,8 @@ MonoBehaviour:
   EnemyShootingPoint: {fileID: 7134956899242328546}
   OriginalStats:
     Health: 500
-    Damage: 100
-    MagicDamage: 100
+    Damage: 50
+    MagicDamage: 50
     Defense: 0
     MagicDefense: 0
     AttackSpeed: 1
@@ -2011,8 +2011,8 @@ MonoBehaviour:
   TraitModificators: []
   InitialStats:
     Health: 500
-    Damage: 100
-    MagicDamage: 100
+    Damage: 50
+    MagicDamage: 50
     Defense: 0
     MagicDefense: 0
     AttackSpeed: 1
@@ -2025,8 +2025,8 @@ MonoBehaviour:
     EnergyRecoveryOnHit: 0.05
   CurrentStats:
     Health: 500
-    Damage: 100
-    MagicDamage: 100
+    Damage: 50
+    MagicDamage: 50
     Defense: 0
     MagicDefense: 0
     AttackSpeed: 1
@@ -2282,7 +2282,7 @@ Transform:
   m_GameObject: {fileID: 7766672470079252569}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.2, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

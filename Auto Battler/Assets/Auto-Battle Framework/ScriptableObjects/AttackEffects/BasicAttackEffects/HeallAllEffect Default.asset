@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3aa46076fbf244f488d693631b77b132, type: 3}
-  m_Name: HealthMeteoriteAllEffect
+  m_Name: HeallAllEffect Default
   m_EditorClassIdentifier: 
   EffectImage: {fileID: 21300000, guid: a3abd3e6dc1558944a6238954a47efc1, type: 3}
   EffectDescription: Orbs fall from the sky that heal 20% of the allies' health.

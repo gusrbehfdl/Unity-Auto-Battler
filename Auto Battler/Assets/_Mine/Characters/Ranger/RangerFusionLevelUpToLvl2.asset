@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19422d86fa72cd4b9c0085e0e96d47e, type: 3}
+  m_Name: RangerFusionLevelUpToLvl2
+  m_EditorClassIdentifier: 
+  CharactersToFusion:
+  - {fileID: 11400000, guid: d823018d2682b55499a83f830a12c2ef, type: 2}
+  - {fileID: 11400000, guid: d823018d2682b55499a83f830a12c2ef, type: 2}
+  - {fileID: 11400000, guid: d823018d2682b55499a83f830a12c2ef, type: 2}
+  FusionResult: {fileID: 11400000, guid: 7238302de3d8d6247b8eadd8fde4f999, type: 2}

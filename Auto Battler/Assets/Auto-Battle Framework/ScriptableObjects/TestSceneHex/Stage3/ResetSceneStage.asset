@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5a4e85928579841a9716ccb546b237, type: 3}
   m_Name: ResetSceneStage
   m_EditorClassIdentifier: 
-  stage: {fileID: 11400000, guid: 1bb77e1f268e74b4dbfe8d323104bc38, type: 2}
-  time: 3
+  stage: {fileID: 11400000, guid: 9c5b754cc17055547bac078ebc334352, type: 2}
+  time: 0
   ShowInUI: 0
   UIPrefab: {fileID: 7836116425479842810, guid: 9e87a4cf507944e4e9f8ba2536b85507, type: 3}

@@ -1497,8 +1497,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5664701949582696127}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.08335667, w: 0.9965198}
-  m_LocalPosition: {x: -9.35, y: 33.68669, z: -27.67}
+  m_LocalRotation: {x: 0, y: 0, z: 0.26322046, w: -0.9647357}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1627,12 +1627,12 @@ MonoBehaviour:
     Range: 3
     CriticalProbability: 0.1
     CriticalDamage: 1.5
-    Energy: 10
+    Energy: 30
     EnergyRecoveryPerAttack: 10
     EnergyRecoveryOnHit: 0.05
   attackEffect: {fileID: 11400000, guid: 97b80151cc0a49e448fb44b6e9ed1335, type: 2}
   ProjectileShootingPoint: {fileID: 2451483717920902267}
-  SpecialAttackEffect: {fileID: 11400000, guid: 1bf61a6096024994394e3eecae5ba3a0, type: 2}
+  SpecialAttackEffect: {fileID: 11400000, guid: d7db2f669686b5b4c8e9a6c3de12e5ed, type: 2}
   UIBarPosition: {fileID: 4683732605605132124}
   OffsetDamagePosition: {x: 0.75, y: -1.2, z: 0}
   HealthBarPrefab: {fileID: 5066534884551985945, guid: 8ecbf766049002d499f002cee4239436, type: 3}
@@ -1654,7 +1654,7 @@ MonoBehaviour:
     Range: 3
     CriticalProbability: 0.1
     CriticalDamage: 1.5
-    Energy: 10
+    Energy: 30
     EnergyRecoveryPerAttack: 10
     EnergyRecoveryOnHit: 0.05
   CurrentStats:
@@ -1668,7 +1668,7 @@ MonoBehaviour:
     Range: 3
     CriticalProbability: 0.1
     CriticalDamage: 1.5
-    Energy: 10
+    Energy: 30
     EnergyRecoveryPerAttack: 10
     EnergyRecoveryOnHit: 0.05
   agent: {fileID: 0}
