@@ -1,11 +1,8 @@
-using System.Collections;
+using AutoBattleFramework.BattleBehaviour.GameActors;
+using AutoBattleFramework.Utility;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
-using AutoBattleFramework.Utility;
-using AutoBattleFramework.BattleBehaviour;
-using AutoBattleFramework.BattleBehaviour.GameActors;
-using NUnit.Framework;
+using UnityEngine.Assertions;
 
 namespace AutoBattleFramework.Battlefield {
     /// <summary>

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Ranger Lvl2
   itemID: Ranger Lvl2
   shopItem: {fileID: 8730503857482465334, guid: c87503bff5aa74c4ab287a2f8cadf8d4, type: 3}
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 7c83612dc5b55c449b5f2073d41de1f2, type: 3}
   descriptionImage: {fileID: 0}
   shopItemUIPrefab: {fileID: 8020878535964746963, guid: 044798776930d3342bef2633c9c18f0f, type: 3}
   itemDescription: Ranger Lvl2

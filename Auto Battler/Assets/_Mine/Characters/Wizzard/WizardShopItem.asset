@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Wizard
   itemID: Wizard
   shopItem: {fileID: 6718746435466953739, guid: 503766974b60e8b459f196da77e3ec54, type: 3}
-  itemImage: {fileID: 21300000, guid: ad5c63dd793a36b408c48a49487beaf4, type: 3}
+  itemImage: {fileID: 21300000, guid: 643a8964e11a38f429c08b40ad4dacd8, type: 3}
   descriptionImage: {fileID: 0}
   shopItemUIPrefab: {fileID: 8020878535964746963, guid: 044798776930d3342bef2633c9c18f0f, type: 3}
   itemDescription: Wizard
