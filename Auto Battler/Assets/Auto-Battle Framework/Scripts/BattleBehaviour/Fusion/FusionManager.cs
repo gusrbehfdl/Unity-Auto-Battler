@@ -40,6 +40,8 @@ namespace AutoBattleFramework.BattleBehaviour.Fusion
             TraitListUI traitUI = Battle.Instance.TeamTraitListUI[0];
             List<GameCharacterFusion> possibleFusions = FindFusionRelatedToCharacter(character);
 
+            Debug.LogWarning($"{character}, {possibleFusions.Count}");
+
             foreach(GameCharacterFusion fusion in possibleFusions)
             {
                 bool sucessful = Fusion(fusion);
@@ -53,6 +55,9 @@ namespace AutoBattleFramework.BattleBehaviour.Fusion
                         traitUI = IPlayer.instance.TraitList;
                     }
                     Battle.Instance.TraitCheck(Battle.Instance.teams[teamIndex].team, Battle.Instance.TeamBenches[teamIndex].GetGameCharacterInBench(), traitList, traitUI);
+
+                    //
+                    TryFusion(fusion.FusionResult);
                 }
             }
         }

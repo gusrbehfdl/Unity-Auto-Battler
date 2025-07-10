@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: Level 1 dev
   m_EditorClassIdentifier: 
   IndividualShopList:
-  - scriptableShopItem: {fileID: 11400000, guid: 15ddf90b7f32c2546a671712fa90a630, type: 2}
+  - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
     itemCost: 1
     itemProbabilityWeight: 1
-  - scriptableShopItem: {fileID: 11400000, guid: 15ddf90b7f32c2546a671712fa90a630, type: 2}
+  - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
     itemCost: 1
     itemProbabilityWeight: 1
-  - scriptableShopItem: {fileID: 11400000, guid: 15ddf90b7f32c2546a671712fa90a630, type: 2}
+  - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
     itemCost: 1
     itemProbabilityWeight: 1
-  - scriptableShopItem: {fileID: 11400000, guid: 15ddf90b7f32c2546a671712fa90a630, type: 2}
+  - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
+    itemCost: 1
+    itemProbabilityWeight: 1
+  - scriptableShopItem: {fileID: 11400000, guid: 434fdd67a6bacf54290aa2887e93f4df, type: 2}
     itemCost: 1
     itemProbabilityWeight: 1
